@@ -1,7 +1,8 @@
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 const validId = require("../utils/validId")
+// const review
 
 
 module.exports = {
-  delete: [asyncErrorBoundary(validId("Review", service.delete)), destroy],
+  delete: [asyncErrorBoundary(validId(service.delete)), destroy],
 }
