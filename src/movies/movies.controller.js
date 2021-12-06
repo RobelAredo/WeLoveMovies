@@ -10,7 +10,6 @@ async function list (req, res) {
 }
 
 function read (req, res) {
-  console.log(req)
   const { data } = res.locals;
   res.json({ data });
 }

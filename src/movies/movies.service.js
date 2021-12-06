@@ -3,7 +3,7 @@ const mapProperties = require("../utils/map-properties");
 
 const mapCritic = mapProperties({
   critic_id: "critic.critic_id",
-  prefered_name: "critic.prefered_name",
+  preferred_name: "critic.prefered_name",
   surname: "critic.surname",
   organization_name: "critic.organization_name",
   "c.created_at": "critic.created_at",
