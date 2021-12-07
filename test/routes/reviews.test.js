@@ -71,7 +71,8 @@ describe("Review Routes", () => {
       const response = await request(app).delete(
         `/reviews/${previous.review_id}`
       );
-
+        
+      console.log("TEST!!:", response.body)
       expect(response.body.error).toBeUndefined();
       expect(response.statusCode).toBe(204);
 

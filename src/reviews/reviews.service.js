@@ -10,11 +10,16 @@ const mapCritic = mapProperties({
   // "c.updated_at": "critic.updated_at",
 })
 
-function destroy (review_id) {
+async function destroy (review_id) {
+  // replacement for returning
+  const reviewToDelete = await knex("reviews").where({ review_id });
+  if (!reviewToDelete.length) return [];
+
   return knex("reviews")
-    .returning("*")
+    // .returning("*") not available in sqlite
     .where({ review_id })
-    .del();
+    .del()
+    .then(() => ["success"]);
 }
 
 async function update (review_id, body = { review_id }) {
