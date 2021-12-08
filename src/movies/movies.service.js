@@ -17,7 +17,7 @@ function list () {
 
 function showingList () {
   return knex("movies")
-  .distinct("movie_id as id")
+  .distinct("movie_id")
   .select("title", "runtime_in_minutes", "rating", "description", "image_url")
   .joinRaw("natural join movies_theaters")
   .where({ is_showing: true })
