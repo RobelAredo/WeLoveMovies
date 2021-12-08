@@ -2,7 +2,7 @@
 
 This is the Back End Application for the WeLoveMovies project.
 
-Check out the backend application here: https://welovemovies-frontendserver.herokuapp.com
+Check out the backend application here: https://welovemovies-backendserver.herokuapp.com
 
 Some valid routes are:
 * /movies
