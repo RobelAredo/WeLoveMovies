@@ -12,4 +12,4 @@ Some valid routes are:
 
 For all routes and valid methods checkout the controller.js files.
 
-Check out the full working application here: https://welovemovies-frontendserver.herokuapp.comgi
+Check out the full working application here: https://welovemovies-frontendserver.herokuapp.com
