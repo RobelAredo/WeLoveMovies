@@ -11,9 +11,12 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-const origin = "https://welovemovies-frontendserver.herokuapp.com";
+// const options = { 
+//   origin: "https://welovemovies-frontendserver.herokuapp.com",
+//   optionsSuccessStatus: 200,
+// }
 
-app.use(cors({ origin, optionsSuccessStatus: 200 }));
+app.use(cors());
 app.use(express.json());
 
 app.use("/movies", moviesRouter);
