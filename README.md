@@ -13,3 +13,12 @@ Some valid routes are:
 For all routes and valid methods checkout the controller.js files.
 
 Check out the full working application here: https://welovemovies-frontendserver.herokuapp.com
+
+## Getting Started:
+1. Fork/Clone this repository
+1. Run `npm install`
+1. Run `mv env.sample .env`
+1. Inside your .env file add your database url (Must be a Postgres database).
+1. Run `npx knex migrate:latest`
+1. Run `npx knex seed:run`
+1. Run `npm start`
